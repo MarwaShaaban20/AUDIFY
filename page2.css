@@ -1,0 +1,71 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+}
+a {
+  background-color: #ddd;
+  color: black;
+}
+.round {
+  border-radius: 50%;
+  border: 2px solid wheat;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+.previous {
+  background-color: #6f66d7;
+  color: wheat;
+  float: left;
+}
+.next {
+  background-color: #6f66d7;
+  color: wheat;
+  float: left;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  background-color: #4534fe; /* Base background color */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.btn.clear {
+  background-color: #675AFE;
+}
+.btn.download {
+  background-color: #675AFE;
+}
+.btn:hover {
+  background-color: #675AFE; /* Hover color */
+}
+.btn:active {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Shadow effect on click */
+}
+audio {
+  width: 100%;
+  margin-bottom: 20px; /* Added margin-bottom for spacing */
+  transition: all 0.5s linear;
+  box-shadow: 2px 2px 4px 0px #006773;
+  border-radius: 7px;
+}
+audio:hover,
+audio:focus,
+audio:active {
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+.buttons {
+  margin-top: 20px; /* Added margin-top for spacing */
+}

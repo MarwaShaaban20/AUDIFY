@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login & Registration Form</title>
+  <link rel="stylesheet" href="css/login&signup.css">
+</head>
+<body>
+  <div class="container">
+    <input type="checkbox" id="check">
+    <div class="login form">
+      <header>Login</header>
+      <form id="loginForm">
+        <input type="email" placeholder="Enter your email" id="loginEmail">
+        <div class="password-container">
+          <input type="password" placeholder="Enter your password" id="loginPassword">
+          <i class="toggle-password fas fa-eye" onclick="togglePassword('loginPassword')"></i>
+        </div>
+        <a href="#">Forgot password?</a>
+        <input type="button" class="button" value="Login" id="loginBtn" onclick="window.location.href='page1.html'">
+      </form>
+      <div class="signup">
+        <span class="signup">Don't have an account?
+         <label for="check">Signup</label>
+        </span>
+      </div>
+    </div>
+    <div class="registration form">
+      <header>Signup</header>
+      <form id="signupForm">
+        <input type="email" placeholder="Enter your email" id="signupEmail">
+        <div class="password-container">
+          <input type="password" placeholder="Create a password" id="signupPassword">
+          <i class="toggle-password fas fa-eye" onclick="togglePassword('signupPassword')"></i>
+        </div>
+        <input type="password" placeholder="Confirm your password" id="confirmPassword">
+        <input type="button" class="button" value="Signup" id="signupBtn" onclick="window.location.href='page1.html'">
+      </form>
+      <div class="signup">
+        <span class="signup">Already have an account?
+         <label for="check">Login</label>
+        </span>
+      </div>
+    </div>
+  </div>
+  <script src="js/login.js"></script>
+</body>
+</html>

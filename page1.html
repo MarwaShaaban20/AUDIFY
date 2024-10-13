@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>speech to text</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/page2.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+</head>
+<body>
+  <div class="navbar">
+    <a href="home page.html" class="previous round">&#8249;</a>
+    <a href="page2.html" class="next round">&#8250;</a>
+  </div>
+  <div class="container">
+     <header>Speech To Text</header>
+     <form action="#">
+        <div class="row">
+           <div class="box">
+              <div class="drag-area">
+                <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                <header>Drag & Drop OR Upload File</header>
+                <button type="button">Browse File</button>
+                <input type="file" hidden>
+                <!-- Add a container for the waveform inside the drag area -->
+                <div id="waveform" style="width: 100%; height: 100px; margin-top: 20px; display: none;"></div>
+              </div>
+           </div>
+        </div>
+
+        <div class="row">
+          <button type="button">Convert To Text</button>
+        </div>
+        <div class="row">
+          <div id="result"></div>
+        </div>
+        <div class="row">
+          <button type="button" onclick="location.href='page2.html'">Additing</button>
+        </div>
+     </form>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
